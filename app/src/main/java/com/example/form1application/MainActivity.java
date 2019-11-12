@@ -116,9 +116,10 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         ImageView profilepicture=findViewById(R.id.profilepicture);
         TextView birthday=findViewById(R.id.yourbirthday);
         RadioGroup gender= findViewById(R.id.gender);
-        CheckBox cycling=findViewById(R.id.cycling);
-        CheckBox gaming=findViewById(R.id.gaming);
-        CheckBox traveling=findViewById(R.id.traveling);
+        CheckBox foci=findViewById(R.id.foci);
+        CheckBox film=findViewById(R.id.film);
+        CheckBox olvasas=findViewById(R.id.olvasas);
+        CheckBox tarsas=findViewById(R.id.tarsas);
         Spinner department=findViewById(R.id.department);
         RadioGroup yearofstudy=findViewById(R.id.yearsofstudy);
         TextView answer=findViewById(R.id.answer);
@@ -143,7 +144,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         {
             Toast.makeText(this,"You should select your gender!",Toast.LENGTH_SHORT).show();
         }
-        else if(!cycling.isChecked() && !gaming.isChecked() && !traveling.isChecked())
+        else if(!foci.isChecked() && !film.isChecked() && !tarsas.isChecked()&& !olvasas.isChecked())
         {
             Toast.makeText(this,"You should select at least one hobby!",Toast.LENGTH_SHORT).show();
         }
@@ -178,19 +179,23 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
             ArrayList<String> hobbies=new ArrayList<String>();
 
-            if(cycling.isChecked())
+            if(foci.isChecked())
             {
-                hobbies.add(cycling.getText().toString());
+                hobbies.add(foci.getText().toString());
             }
 
-            if(gaming.isChecked())
+            if(film.isChecked())
             {
-                hobbies.add(gaming.getText().toString());
+                hobbies.add(film.getText().toString());
             }
 
-            if(traveling.isChecked())
+            if(olvasas.isChecked())
             {
-                hobbies.add(traveling.getText().toString());
+                hobbies.add(olvasas.getText().toString());
+            }
+            if(tarsas.isChecked())
+            {
+                hobbies.add(tarsas.getText().toString());
             }
 
             userform.setHobbies(hobbies);

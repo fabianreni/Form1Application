@@ -34,20 +34,33 @@
 
             <EditText
                 android:id="@+id/name"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="2dp"
                 android:hint="Name"
                 android:inputType="text" />
 
-            <Spinner
-                android:id="@+id/location"
-                android:layout_width="200dp"
+
+            <Button
+                android:id="@+id/b_location"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginBottom="20dp"
-                android:drawSelectorOnTop="true" />
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="bt_location" />
+            <Spinner
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="10dp"
+                android:spinnerMode="dropdown"
+                />
+
 
             <Button
                 android:id="@+id/selectphoto"
@@ -60,10 +73,10 @@
 
             <ImageView
                 android:id="@+id/profilepicture"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginBottom="20dp" />
+                android:layout_marginBottom="10dp" />
 
             <Button
                 android:id="@+id/dateofbirth"
@@ -79,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="2dp"
                 android:text="Your birthday"
                 android:textSize="18dp" />
 
@@ -95,7 +108,7 @@
                 android:id="@+id/gender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="10dp"
                 android:orientation="horizontal">
 
                 <RadioButton
@@ -121,32 +134,54 @@
                 android:layout_marginBottom="10dp"
                 android:text="Hobbies :"
                 android:textSize="20dp" />
-
-            <CheckBox
-                android:id="@+id/cycling"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:text="Cycling" />
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
 
-            <CheckBox
-                android:id="@+id/gaming"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:text="Gaming" />
 
-            <CheckBox
-                android:id="@+id/traveling"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginBottom="20dp"
-                android:text="Traveling" />
+                <CheckBox
+                    android:id="@+id/foci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:text="foci" />
+
+                <CheckBox
+                    android:id="@+id/film"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:text="film" />
+
+                <CheckBox
+                    android:id="@+id/olvasas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:text="olvasas" />
+
+                <CheckBox
+                    android:id="@+id/tarsas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:text="tarsas" />
+            </LinearLayout>
 
             <Spinner
                 android:id="@+id/department"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginBottom="20dp"
@@ -207,7 +242,7 @@
 
             <EditText
                 android:id="@+id/answer"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginBottom="20dp"
